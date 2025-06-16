@@ -7,8 +7,85 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get">
-        
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iest">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA" selected>Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" required>
+            <datalist id="lstprof">
+                <option value="adm">Administrador</option>
+                <option value="adv">Advogado</option>
+                <option value="arq">Arquiteto</option>
+                <option value="art">Artista</option>
+                <option value="bio">Biólogo</option>
+                <option value="cc">Cientista da Computação</option>
+                <option value="chef">Chef de Cozinha</option>
+                <option value="com">Comerciante</option>
+                <option value="des">Designer</option>
+                <option value="dev">Desenvolvedor</option>
+                <option value="edu">Educador</option>
+                <option value="enf">Enfermeiro</option>
+                <option value="eng">Engenheiro</option>
+                <option value="est">Estudante</option>
+                <option value="fis">Físico</option>
+                <option value="fot">Fotógrafo</option>
+                <option value="geo">Geógrafo</option>
+                <option value="ges">Gestor de Projetos</option>
+                <option value="jor">Jornalista</option>
+                <option value="mar">Marketeiro</option>
+                <option value="med">Médico</option>
+                <option value="mot">Motorista</option>
+                <option value="mus">Músico</option>
+                <option value="nut">Nutricionista</option>
+                <option value="ped">Pedagogo</option>
+                <option value="pol">Policial</option>
+                <option value="pri">Professor</option>
+                <option value="psi">Psicólogo</option>
+                <option value="sec">Secretário</option>
+                <option value="soc">Sociólogo</option>
+                <option value="tec">Técnico em Informática</option>
+                <option value="vet">Veterinário</option>
+                <option value="vnd">Vendedor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" required></textarea>
+        </p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
     </form>
 </body>
 </html>
