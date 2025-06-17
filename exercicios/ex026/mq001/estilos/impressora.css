@@ -12,3 +12,15 @@ html{
     font-size: 1.5em;
     line-height: 1.5em;
 }
+
+menu{
+    display: none;
+}
+
+article{
+    width: 100%;
+}
+
+article::after{
+    content: 'Este artigo foi impresso em 17/06/2025';
+}
