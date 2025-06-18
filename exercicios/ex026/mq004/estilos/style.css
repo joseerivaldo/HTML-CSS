@@ -30,7 +30,7 @@ main{
 h1{
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 1px rgba(255, 192, 203, 0.712);
+    text-shadow: 2px 2px 1px black;
 }
 
 img{
