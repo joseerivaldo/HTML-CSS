@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox centralizada</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightcoral;
+        }
+        main{
+            background-color: rgba(190, 139, 44, 0.753);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            background-color: rgb(135, 197, 222);
+            height: 300px;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(3, 181, 187, 0.699);
+        }
+
+        section > h1{
+            text-align: center;
+            padding-top: 10px;
+        }
+        .box{
+            margin-top: 30px;
+            padding: 5px;
+            text-align: center;
+        }
+        .box > input{
+            height: 50px;
+            width: 400px;
+        }
+
+        .botao{
+
+            font-size: 2em;
+            height: 50px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Tela de login</h1>
+            <form action="#" method="post" autocomplete="on">
+                <div class="box">
+                    <input type="text" name="user" id="iuser" placeholder="seu usuário" required autocomplete="username">
+                </div>
+                <div class="box">
+                    <input type="password" name="senha" id="isenha" placeholder="sua senha">
+                </div>
+                <div>
+                    <label for="ihumano">
+                        <input type="checkbox" name="humano" id="ihumano">
+                    </label>
+                    Você é humano?
+                </div>
+                <button class="botao" type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
