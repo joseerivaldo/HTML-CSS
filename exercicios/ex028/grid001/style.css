@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: bisque;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+
+    background-color: aquamarine;
+}
+
+.item{
+    background-color: brown;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+}
