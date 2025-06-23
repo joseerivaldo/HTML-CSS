@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+    background-color: red;
+    width: 95vw;
+}
+
+header, header > nav{
+    flex-flow: column;
+}
+
+header > h1{
+    text-align: center;
+    flex-basis: 40px;
+}
+
+header > nav > a{
+    width: 90vw;
+}
