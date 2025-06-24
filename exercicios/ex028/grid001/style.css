@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: bisque;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px 50px 50px;
+    gap: 10px;
+    place-items: normal normal;
+
+    background-color: aquamarine;
+}
+
+.item{
+    background-color: brown;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+}
